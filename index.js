@@ -20,4 +20,6 @@ io.on('connection', socket => {
     socket.on('typing', data => {
         socket.broadcast.emit('typing',data);
     });
+
+    socket.on('disconnect', () => console.log('Client disconnected'));
 });
