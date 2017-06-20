@@ -1,11 +1,10 @@
 const express = require('express');
 const socket = require('socket.io');
+const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-const server = app
-  .use((req, res) => res.sendFile(INDEX) )
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`));
+const PORT = process.env.PORT || 4000;
+const server = app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
 app.use(express.static('public'));
 
