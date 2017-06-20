@@ -1,4 +1,4 @@
-const socket = io.connect('http://localhost:4000');
+const socket = io.connect('https://gentle-plains-40214.herokuapp.com/');
 
 var message = document.getElementById('message');
       handle = document.getElementById('handle'),
