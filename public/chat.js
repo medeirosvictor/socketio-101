@@ -1,5 +1,9 @@
 const socket = io.connect('https://gentle-plains-40214.herokuapp.com/');
 
+particlesJS.load('particles-js', './particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
 var message = document.getElementById('message');
       handle = document.getElementById('handle'),
       btn = document.getElementById('send'),

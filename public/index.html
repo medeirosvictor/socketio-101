@@ -7,16 +7,21 @@
         <link href="/styles.css" rel="stylesheet">
         <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+        <script src="./particles.js"></script>
     </head>
-    <body>
+    <body id="particles-js">
+        
         <nav class="chat-nav">
-           <ul>
+           <ul class="nav-icons-list">
                <li>
-                   <i class="fa fa-comments-o" aria-hidden="true"></i>
+                  <i class="fa fa-user-circle-o chat-nav-icon" aria-hidden="true"></i>
+               </li>
+               <li>
+                  <i class="fa fa-sign-out chat-nav-icon" aria-hidden="true"></i>
                </li>
            </ul>
         </nav>
-        <div id="mario-chat">
+        <div id="under-chat">
             <div id="chat-window">
                 <div id="output"></div>
                 <div id="feedback"></div>

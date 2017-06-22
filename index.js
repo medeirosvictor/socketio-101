@@ -1,6 +1,7 @@
 const express = require('express');
 const socket = require('socket.io');
 const path = require('path');
+const redis = require('redis');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -13,13 +14,15 @@ app.use(express.static('public'));
 const io = socket(server);
 
 io.on('connection', (socket) => {
-    console.log('Chat socket connected! id: ', socket.id);
+    socket.on('join', ()=> {
+        console.log('User has logged in!');
+    })
 
-    socket.on('chat', data => {
+    socket.on('chat', (data) => {
         io.sockets.emit('chat', data);
     });
 
-    socket.on('typing', data => {
+    socket.on('typing', (data) => {
         socket.broadcast.emit('typing',data);
     });
 
