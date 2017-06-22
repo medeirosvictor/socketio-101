@@ -1,5 +1,13 @@
+html{
+    background: url('./underchat.jpg')no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body{
     font-family: 'Nunito';
+    margin: 0 auto;
 }
 
 h2{
@@ -10,8 +18,7 @@ h2{
 
 #mario-chat{
     max-width: 600px;
-    margin: 30px auto;
-    border: 1px solid #ddd;
+    margin: 200px auto;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
     border-radius: 2px;
 }
@@ -66,4 +73,9 @@ button{
     padding: 12px 0;
     width: 100%;
     border-radius: 0 0 2px 2px;
+}
+.chat-nav{
+    height: 50px;
+    background: white;
+    margin: 10px auto;
 }

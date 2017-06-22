@@ -5,9 +5,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
     </head>
     <body>
+        <nav class="chat-nav">
+           <ul>
+               <li>
+                   <i class="fa fa-comments-o" aria-hidden="true"></i>
+               </li>
+           </ul>
+        </nav>
         <div id="mario-chat">
             <div id="chat-window">
                 <div id="output"></div>
@@ -15,7 +23,7 @@
             </div>
             <input type="text" placeholder="Handle" id="handle">
             <input type="text" placeholder="Message" id="message">
-            <button id="send">Send</button>
+            <button type="submit" id="send">Send</button>
         </div>
         <script src="/chat.js"></script>
     </body>
