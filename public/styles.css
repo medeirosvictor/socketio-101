@@ -10,6 +10,7 @@ body{
 }
 
 #particles-js{
+    display: flex;
 background: url('./underchat.jpg')no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -24,14 +25,14 @@ h2{
 }
 
 #under-chat{
-    position: absolute;
+   position: absolute;
     top: 50%;
     left: 50%;
-    height: 400px;
-    width: 270px;
+    height: 524px;
+    width: 600px;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
     border-radius: 2px;
-    margin: -260px 0 0 -134px;
+    margin: -280px 0 0 -296px;
 }
 
 #chat-window{
@@ -87,12 +88,14 @@ button{
 }
 .chat-nav{
     position: absolute;
-    top: 0;
+    top: 50px;
+    right: 230px;
     height: 50px;
     margin: 10px auto;
 }
 .chat-nav-icon{
-    font-size: 40px
+    font-size: 40px;
+    color: #032d32;
 }
 .nav-icons-list{
     list-style: none;
